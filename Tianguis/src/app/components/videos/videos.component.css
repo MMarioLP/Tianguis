@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+.bodyvid{
+    display: flex;
+    min-height: 340vh;
+    background: #23242a;
+    justify-content: center;
+
+}
+button[type="submit"]
+{
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 10px 30px;
+    width: 110px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.boxdiv{
+    width: 100%;
+    height: 50px;
+    background-color: #1c1c1c;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.formvid{
+    inset: 2px;
+    border-radius: 2px;
+    background: #28292d;
+    z-index: 8;
+    flex-direction: column;
+    border-color: #45f3ff;
+}
+
+.videos{
+    width: 98%;
+    height: auto;
+    background-color: #28292d;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.twitch{
+    display: flex;
+    margin: 20px;
+}
+.twitch-chat{
+    display: flex;
+}
+
+.fondo{
+    display: flex;
+}
+
+.acomodo{
+    display: flex;
+}

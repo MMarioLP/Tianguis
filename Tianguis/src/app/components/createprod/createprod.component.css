@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+.bodyadd{
+    display: flex;
+    align-items: center;
+    background: #23242a;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.boxadd{
+    position: relative;
+    width: 800px;
+    height: 550px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    top: 18px;
+}
+/*.boxadd::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 480px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.boxadd::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 480px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}*/
+
+.formadd
+{
+    position: absolute;
+    inset: 2px;
+    border-radius: 2px;
+    background: #28292d;
+    z-index: 8;
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.inputBox
+{
+    position: relative;
+    width: 250px;
+    margin-top: 0px;
+    margin: 10px;
+    
+}
+.inputBox input
+{
+    position: relative;
+    width: 250px;
+    padding: 15px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s
+}
+.inputBox input:valid~ span,
+.inputBox input:focus~ span
+{
+    color: #45f3ff;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+.inputBox i
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+.inputBox input:valid~ i,
+.inputBox input:focus~ i
+{
+    height: 44px;
+}
+
+.links
+{
+    display: flex;
+    justify-content: space-between;
+}
+.links a
+{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+.links a:hover,
+.links a:nth-child(2)
+{
+    color: #45f3ff;
+}
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 11px 25px;
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button[type="submit"]
+{
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 10px 30px;
+    width: 250px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.contenido{
+    background-color: #28292d;
+    width: 350px;
+    height: 400px;
+}
+
+.cardimg{
+    background-color: #1c1c1c;
+    overflow: hidden;
+}
+
+.imagen{
+    background-color: #28292d;
+    width: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    border-color: #45f3ff;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.img{
+    width: 320px;
+    height: 220px;
+    margin: 15px;
+}
+
+.img img{
+    width: 315px;
+    height: 215px;
+    justify-content: center;
+
+}
+.ordenar{
+    width: 350px;
+    height: 200px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ordenar h3{
+    color: #45f3ff;
+    font-size: 22px;
+    text-align: center;
+}
+
+.ordenar p{
+    text-align: center;
+    font-size: 15px;
+    color: #45f3ff;
+    margin: 5px;
+}

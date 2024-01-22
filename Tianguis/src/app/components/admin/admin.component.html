@@ -1,0 +1,73 @@
+<body>
+  
+
+    <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h3>Personas</h3>
+          </div>
+          <div class="card-body">
+            <table class="table table-hover">
+              <thead>
+                <tr class="text-center">
+                  <th>ID</th>
+                  <th>USERNAME</th>
+                  <th>NAME</th>
+                  <th>APELLIDOS</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr *ngFor="let usuario of usuarios" class="text-center">
+                  <td>{{usuario.id}}</td>
+                  <td>{{usuario.username}}</td>
+                  <td>{{usuario.nombre}}</td>
+                  <td>{{usuario.apellidos}}</td>
+                  
+                  <td>
+                   
+                    <button  (click)="Delete(usuario)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h3>Productos</h3>
+        </div>
+        <div class="card-body">
+          <table class="table table-hover">
+            <thead>
+              <tr class="text-center">
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>decsricion</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr *ngFor="let producto of producto" class="text-center">
+                <td>{{producto.id}}</td>
+                <td>{{producto.nombre}}</td>
+                <td>{{producto.precio}}</td>
+                <td>{{producto.descripcion}}</td>
+                
+                <td>
+                 
+                  <button  (click)="Delete2(producto)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    </body>
+    

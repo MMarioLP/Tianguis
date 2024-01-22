@@ -1,0 +1,46 @@
+<div class="bodyadd">
+    <div class="boxadd">
+        <div class="formadd">
+            <div class="contenido">
+                <div class="inputBox">
+                    <input type="text" name="title" [(ngModel)]="producto.nombre">
+                    <span>Nombre</span>
+                    <i></i>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input name="descripcion" [(ngModel)]="producto.descripcion">
+                    <span>Descripcion</span>
+                    <i></i>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="number" name="precio" [(ngModel)]="producto.precio">
+                    <span>Precio</span>
+                    <i></i>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="url" name="image" [(ngModel)]="producto.image">
+                    <span>Imagen</span>
+                    <i></i>
+                </div>
+                <button type="submit" (click)="edit? updateP() : savep()">
+                    <i class="fa-solid fa-upload"></i> Subir</button>
+                <br>
+                <button type="submit" routerLink="/menu"> 
+                    <i class="fa-solid fa-right-from-bracket"></i> Salir</button>
+            </div>
+            <div class="imagen">
+                <div class="img">
+                    <img [src]="producto.image == '' ? '/assets/noimage.png' : producto.image" alt="No Image">
+                </div>
+                <div class="ordenar">
+                    <h3>{{producto.nombre == '' ? 'Nombre del Producto' : producto.nombre}}</h3>
+                    <p>{{producto.precio}}</p>
+                    <p>{{producto.descripcion == '' ? 'Descripcion del Producto' : producto.descripcion}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
